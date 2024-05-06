@@ -1,0 +1,233 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ico {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  width: 500px;
+  color: #fff;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  margin-left: 4px;
+  margin-bottom: 10px;
+}
+
+.select_opt,
+.sol_opt,
+.usdt_opt {
+  font-weight: bold;
+  color: #000000;
+}
+
+.dropdown select {
+  color: #fff;
+  background: linear-gradient(45deg, #8a2be2, #87cefa);
+  text-align: center;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 0.8rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.but {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.solAddress {
+  margin-top: 10px;
+}
+
+.solAddress input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  outline: none;
+}
+
+header {
+  background: linear-gradient(90deg, #8a2be2, #87cefa);
+  color: #fff;
+  padding: 20px;
+  display: flex; /* Add this line */
+  justify-content: space-between; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add some spacing between the logo and the header content */
+}
+
+.footer {
+  background: linear-gradient(90deg, #87cefa, #8a2be2);
+  color: #fff;
+  text-align: center;
+  padding: 15px 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+input[type="number"] {
+  padding: 0.8rem;
+  margin-bottom: 10px;
+  width: calc(100% - 10px);
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(45deg, #8a2be2, #87cefa);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pressed {
+  transform: translateY(2px) !important;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+}
+
+.loading-spinner img {
+  width: 100%;
+  height: 100%;
+}
+
+.warning-message {
+  background-color: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.scroll_images {
+  margin-top: 10px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  max-height: 200px;
+}
+
+.marquee-container img {
+  max-height: 200px;
+  width: auto;
+  margin: 0 10px;
+  object-fit: contain;
+}
+
+.roar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.roar-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2, 0 0 30px #8a2be2;
+  margin-bottom: 10px;
+}
+
+.roar-text {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 5px #87cefa, 0 0 10px #87cefa, 0 0 15px #87cefa;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.roar-subtext {
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0 0 5px #87cefa, 0 0 10px #87cefa, 0 0 15px #87cefa;
+  line-height: 1.5;
+}

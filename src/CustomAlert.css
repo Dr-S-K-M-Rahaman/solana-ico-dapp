@@ -1,0 +1,46 @@
+/* CustomAlert.css */
+.custom-alert-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-alert-content {
+  background: linear-gradient(45deg, #8a2be2, #87cefa); /* Updated background color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; /* Add this line to set the text color to white */
+}
+
+.custom-alert-content span {
+  margin-bottom: 10px;
+}
+
+.custom-alert-content a {
+  color: #fff; /* Update the link color to white */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.custom-alert-content button {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #8037c5, #93d4fd);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
